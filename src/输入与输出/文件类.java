@@ -27,6 +27,13 @@ public class 文件类 {
             System.out.println("exists");
         }
 
+//        列出文件夹内的所有文件
+        File directory = new File("src");
+        System.out.println(directory.isDirectory());
+        File[] files = directory.listFiles();
+        for (File file1:files ) {
+            System.out.println(file1.getName());
+        }
 
     }
 }
